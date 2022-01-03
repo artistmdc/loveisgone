@@ -1,6 +1,4 @@
-package cn.mdc.springframework.beans.factory.support;
-
-import cn.mdc.springframework.beans.factory.config.BeanDefinition;
+package cn.mdc.springframework.beans.factory.config;
 
 /**
  * @author maodianchu
