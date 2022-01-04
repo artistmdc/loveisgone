@@ -10,7 +10,7 @@ import cn.mdc.springframework.beans.factory.config.BeanDefinition;
  * @author maodc
  * @date 2022/1/3 下午1:11
  */
-public abstract class DefaultBeanFactory extends DefaultSingletonBeanRegistry implements BeanFactory {
+public abstract class AbstractBeanFactory extends DefaultSingletonBeanRegistry implements BeanFactory {
 
     @Override
     public Object getBean(String name) throws BeansException {
