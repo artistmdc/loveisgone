@@ -1,8 +1,8 @@
 package cn.mdc.springframework.beans.factory.support;
 
 import cn.mdc.springframework.beans.BeansException;
-import cn.mdc.springframework.beans.factory.config.BeanDefinition;
-import cn.mdc.springframework.beans.factory.config.BeanDefinitionRegistry;
+import cn.mdc.springframework.beans.factory.factory.BeanDefinition;
+import cn.mdc.springframework.beans.factory.factory.BeanDefinitionRegistry;
 
 import java.util.HashMap;
 import java.util.Map;

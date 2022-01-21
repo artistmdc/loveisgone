@@ -2,7 +2,7 @@ package cn.mdc.springframework.beans.factory.support;
 
 import cn.mdc.springframework.beans.BeansException;
 import cn.mdc.springframework.beans.factory.ConfigurableListableBeanFactory;
-import cn.mdc.springframework.beans.factory.config.BeanDefinition;
+import cn.mdc.springframework.beans.factory.factory.BeanDefinition;
 
 import java.util.HashMap;
 import java.util.Map;

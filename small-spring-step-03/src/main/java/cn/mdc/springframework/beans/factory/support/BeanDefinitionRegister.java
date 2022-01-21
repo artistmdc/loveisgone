@@ -1,6 +1,6 @@
 package cn.mdc.springframework.beans.factory.support;
 
-import cn.mdc.springframework.beans.factory.config.BeanDefinition;
+import cn.mdc.springframework.beans.factory.factory.BeanDefinition;
 
 /**
  * TODO

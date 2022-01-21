@@ -2,7 +2,7 @@ package cn.mdc.springframework.beans.factory.support;
 
 import cn.mdc.springframework.beans.BeansException;
 import cn.mdc.springframework.beans.factory.BeanFactory;
-import cn.mdc.springframework.beans.factory.config.BeanDefinition;
+import cn.mdc.springframework.beans.factory.factory.BeanDefinition;
 
 /**
  * TODO

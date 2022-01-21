@@ -4,8 +4,8 @@ import cn.hutool.core.bean.BeanUtil;
 import cn.mdc.springframework.beans.BeansException;
 import cn.mdc.springframework.beans.PropertyValue;
 import cn.mdc.springframework.beans.PropertyValues;
-import cn.mdc.springframework.beans.factory.config.BeanDefinition;
-import cn.mdc.springframework.beans.factory.config.BeanReference;
+import cn.mdc.springframework.beans.factory.factory.BeanDefinition;
+import cn.mdc.springframework.beans.factory.factory.BeanReference;
 
 import java.lang.reflect.Constructor;
 
