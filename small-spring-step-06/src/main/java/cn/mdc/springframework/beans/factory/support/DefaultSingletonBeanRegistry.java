@@ -1,6 +1,6 @@
 package cn.mdc.springframework.beans.factory.support;
 
-import cn.mdc.springframework.beans.factory.factory.SingletonBeanRegistry;
+import cn.mdc.springframework.beans.factory.config.SingletonBeanRegistry;
 
 import java.util.HashMap;
 import java.util.Map;

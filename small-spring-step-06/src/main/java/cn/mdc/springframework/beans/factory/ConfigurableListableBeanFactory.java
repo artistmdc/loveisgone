@@ -1,10 +1,10 @@
 package cn.mdc.springframework.beans.factory;
 
 import cn.mdc.springframework.beans.BeansException;
-import cn.mdc.springframework.beans.factory.factory.AutowireCapableBeanFactory;
-import cn.mdc.springframework.beans.factory.factory.BeanDefinition;
-import cn.mdc.springframework.beans.factory.factory.BeanPostProcessor;
-import cn.mdc.springframework.beans.factory.factory.ConfigurableBeanFactory;
+import cn.mdc.springframework.beans.factory.config.AutowireCapableBeanFactory;
+import cn.mdc.springframework.beans.factory.config.BeanDefinition;
+import cn.mdc.springframework.beans.factory.config.BeanPostProcessor;
+import cn.mdc.springframework.beans.factory.config.ConfigurableBeanFactory;
 
 /**
  * TODO

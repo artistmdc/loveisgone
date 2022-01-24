@@ -1,4 +1,4 @@
-package cn.mdc.springframework.beans.factory.factory;
+package cn.mdc.springframework.beans.factory.config;
 
 /**
  * @author maodianchu

@@ -2,8 +2,8 @@ package cn.mdc.springframework.context.support;
 
 import cn.mdc.springframework.beans.BeansException;
 import cn.mdc.springframework.beans.factory.ConfigurableListableBeanFactory;
-import cn.mdc.springframework.beans.factory.factory.BeanFactoryPostProcessor;
-import cn.mdc.springframework.beans.factory.factory.BeanPostProcessor;
+import cn.mdc.springframework.beans.factory.config.BeanFactoryPostProcessor;
+import cn.mdc.springframework.beans.factory.config.BeanPostProcessor;
 import cn.mdc.springframework.context.ConfigurableApplicationContext;
 import cn.mdc.springframework.core.io.DefaultResourceLoader;
 

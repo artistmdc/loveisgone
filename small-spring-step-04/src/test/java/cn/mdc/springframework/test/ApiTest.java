@@ -2,8 +2,8 @@ package cn.mdc.springframework.test;
 
 import cn.mdc.springframework.beans.PropertyValue;
 import cn.mdc.springframework.beans.PropertyValues;
-import cn.mdc.springframework.beans.factory.factory.BeanDefinition;
-import cn.mdc.springframework.beans.factory.factory.BeanReference;
+import cn.mdc.springframework.beans.factory.config.BeanDefinition;
+import cn.mdc.springframework.beans.factory.config.BeanReference;
 import cn.mdc.springframework.beans.factory.support.DefaultListableBeanFactory;
 import cn.mdc.springframework.test.bean.UserDao;
 import cn.mdc.springframework.test.bean.UserService;
