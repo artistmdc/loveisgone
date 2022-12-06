@@ -7,7 +7,7 @@ package cn.mdc.springframework.beans.factory;
  * @version 1.0
  * @Description
  * @company
- * @date 2022/1/9 上午9:15
+ * @date 2022/1/9 上午9:19
  */
-public interface HierarchicalBeanFactory extends BeanFactory {
+public interface AutowireCapableBeanFactory extends BeanFactory {
 }

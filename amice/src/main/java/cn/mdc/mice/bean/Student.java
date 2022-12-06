@@ -17,10 +17,15 @@ import lombok.experimental.Accessors;
 @Accessors(chain = true)
 public class Student {
 
+    private Integer type;
+
     private String name;
 
     private String company;
 
     private String phone;
 
+    private Long firstWatchTime;
+
+    private Long lastWatchTime;
 }

@@ -1,7 +1,11 @@
+import cn.hutool.core.collection.CollectionUtil;
+import cn.hutool.core.date.DateUtil;
 import com.google.common.collect.ArrayListMultimap;
 import com.google.common.collect.Multimap;
 
-import java.util.Collection;
+import java.math.BigDecimal;
+import java.util.*;
+import java.util.concurrent.*;
 
 /**
  * @author maodianchu
@@ -11,16 +15,36 @@ import java.util.Collection;
  */
 public class Test1 {
 
-    public static void main(String[] args) {
-        Multimap<String,Object> myMultimap = ArrayListMultimap.create();
-        // Adding some key/value
-        myMultimap.put("Fruits", "Bannana");
-        myMultimap.put("Fruits", "Apple");
-        myMultimap.put("Fruits", "Pear");
-        myMultimap.put("Fruits", "Pear");
-        myMultimap.put("Vegetables", "Carrot");
+    static class T1 implements Callable<Integer>{
 
-        Collection<Object> fruits = myMultimap.get("Fruits");
-        fruits.forEach(e -> System.out.println(e));
+        @Override
+        public Integer call() throws Exception {
+            return 1;
+        }
+    }
+
+    public static void main(String[] args) throws ExecutionException, InterruptedException {
+        A a = new A();
+        a.setAge(15);
+        aa(a);
+        System.out.println(a.getAge());
+    }
+
+
+    private static void buildOnlineCount(Integer highestOnlineCount, Integer lowestOnlineCount) {
+        highestOnlineCount = 5;
+    }
+
+    private static void aa(A a) {
+        a.setAge(13);
+    }
+
+    public static String calculateWatchTime(Long watchTime) {
+        String calculateResult = "0";
+        if (watchTime > 0) {
+            calculateResult = new BigDecimal(watchTime).divide(new BigDecimal(60), 0, BigDecimal.ROUND_DOWN).toString();
+            calculateResult = calculateResult.equals("0") ? "1" : calculateResult;
+        }
+        return calculateResult;
     }
 }

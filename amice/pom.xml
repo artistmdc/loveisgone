@@ -3,7 +3,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>loveisgone</artifactId>
+        <artifactId>mice</artifactId>
         <groupId>com.mdc</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
@@ -14,10 +14,102 @@
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
+        <fastjson.version>1.2.83</fastjson.version>
+        <lombok.version>1.16.20</lombok.version>
+        <comein-common.version>1.1.2</comein-common.version>
     </properties>
 
     <dependencies>
 
+        <dependency>
+            <groupId>cn.comein</groupId>
+            <artifactId>comein-common</artifactId>
+            <version>${comein-common.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.csp</groupId>
+            <artifactId>spring-boot-starter-ahas-sentinel-client</artifactId>
+            <version>1.9.2</version>
+        </dependency>
+        <dependency>
+            <groupId>net.sourceforge.htmlcleaner</groupId>
+            <artifactId>htmlcleaner</artifactId>
+            <version>2.22</version>
+        </dependency>
+        <dependency>
+            <groupId>com.ctrip.framework.apollo</groupId>
+            <artifactId>apollo-client</artifactId>
+            <version>1.6.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.aliyun.opensearch</groupId>
+            <artifactId>aliyun-sdk-opensearch</artifactId>
+            <version>3.2.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.ehcache</groupId>
+            <artifactId>ehcache</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>cn.comein</groupId>
+            <artifactId>ninebot-quote-client</artifactId>
+            <version>0.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.iflytek.msp.lfasr</groupId>
+            <artifactId>lfasr-sdk</artifactId>
+            <version>3.0.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fastjson.version}</version>
+        </dependency>
+<!--        &lt;!&ndash; jave核心包 &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>ws.schild</groupId>-->
+<!--            <artifactId>jave-core</artifactId>-->
+<!--            <version>2.4.6</version>-->
+<!--        </dependency>-->
+<!--        &lt;!&ndash; window64位 ffmpeg &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>ws.schild</groupId>-->
+<!--            <artifactId>jave-native-win64</artifactId>-->
+<!--            <version>2.4.6</version>-->
+<!--        </dependency>-->
+<!--        &lt;!&ndash; linux64位 ffmpeg &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>ws.schild</groupId>-->
+<!--            <artifactId>jave-native-linux64</artifactId>-->
+<!--            <version>2.4.6</version>-->
+<!--        </dependency>-->
+        <dependency>
+            <groupId>ws.schild</groupId>
+            <artifactId>jave-core</artifactId>
+            <version>3.1.1</version>
+        </dependency>
+        <!-- 以下依赖根据系统二选一 -->
+        <!-- win系统平台的依赖 -->
+        <dependency>
+            <groupId>ws.schild</groupId>
+            <artifactId>jave-nativebin-win64</artifactId>
+            <version>3.1.1</version>
+        </dependency>
+        <!-- linux系统平台的依赖 -->
+        <dependency>
+            <groupId>ws.schild</groupId>
+            <artifactId>jave-nativebin-linux64</artifactId>
+            <version>3.1.1</version>
+        </dependency>
     </dependencies>
 
 </project>

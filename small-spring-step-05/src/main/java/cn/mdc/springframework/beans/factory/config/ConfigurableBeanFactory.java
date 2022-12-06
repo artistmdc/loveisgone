@@ -1,7 +1,5 @@
 package cn.mdc.springframework.beans.factory.config;
 
-import cn.mdc.springframework.beans.factory.HierarchicalBeanFactory;
-
 /**
  * TODO
  *

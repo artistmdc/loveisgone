@@ -9,7 +9,7 @@ import cn.mdc.springframework.beans.factory.BeanFactory;
  * @version 1.0
  * @Description
  * @company
- * @date 2022/1/9 上午9:19
+ * @date 2022/1/9 上午9:15
  */
-public interface AutowireCapableBeanFactory extends BeanFactory {
+public interface HierarchicalBeanFactory extends BeanFactory {
 }
